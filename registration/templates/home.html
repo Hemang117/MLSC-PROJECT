@@ -1,0 +1,181 @@
+{% load static  %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Home Page</title>
+  </head>
+  <body style="background-image: url(''); background-size: cover; background-repeat: no-repeat;">
+    <header style="color: rgba(0, 0, 0, 0.907);">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+          <div class="container">
+            {% csrf_token %}
+            <a class="navbar-brand" style="color: aqua; font-size:xxx-large ;" href="#" >MyHostel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" style="color: aqua; font-size: larger ;" href="login.html">Login</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a href="{% url 'logout' %}" class="btn btn-primary">Logout</a>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      </header>
+      <br>
+      <br>
+    <!--card-->
+    <div class="row row-cols-1 row-cols-md-2 g-4 my-5 mx-5">
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/one.jpg'%}" height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                
+                <form method="link" action="/p"
+                {% csrf_token %}
+              <a href="p.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Profile</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/two.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/n"
+                {% csrf_token %}
+              <a href="n.html" class="card-title" style="text-align: center; font-size: x-large;color: black;">Notice</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/three.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/tm"
+                {% csrf_token %}
+              <a href="tm.html" class="card-title" style="text-align: center; font-size: x-large;color: black;">Today's Menu</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-2 g-4 my-5 mx-5">
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/leave-application-7510407.jpg'%}" height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/la"
+                {% csrf_token %}
+              <a href="la.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Leave Application</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/five.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/f"
+                {% csrf_token %}
+              <a href="f.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Fees</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/six.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/hc"
+                {% csrf_token %}
+              <a href="hc.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Hostel Contacts</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+      </div><br>
+      <div class="row row-cols-1 row-cols-md-2 g-4 my-5 mx-5">
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/seven.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/e"
+                {% csrf_token %}
+              <a href="e.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Events</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/eight.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/lf"
+                {% csrf_token %}
+              <a href="lf.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Lost and Found</a>
+            </form>
+            </div>
+          </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <button>
+            <img src="{% static 'app1/images/nine.jpg'%}"  height="350" class="card-img-top" alt="...">
+            <div class="card-body">
+                <form method="link" action="/q"
+                {% csrf_token %}
+              <a href="q.html" class="card-title" style="text-align: center; font-size: x-large; color: black;">Queries</a>
+            </form>
+            </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+</body>
+
+  
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

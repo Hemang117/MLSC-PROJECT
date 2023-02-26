@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-yvBnYOdQgFZ/N73Af4oCwv0fjjj2cJBYnxzrE/bH0SDthu+h7jXm/kZJH7GXB3s+3V6Ud0pUyB/ovFj+TbwG6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card my-5">
+          <div class="card-header bg-primary text-white">
+            <h2>My Profile</h2>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Personal Information</h4>
+                <ul class="list-unstyled">
+                  <form method="post" action="/home/p.html">
+                  {% csrf_token %}
+                  <li><strong>Name:</strong> John Doe</li>
+                  <li><strong>Roll Number:</strong> 123456</li>
+                  <li><strong>Hostel Name:</strong> A</li>
+                  <li><strong>Room Number:</strong> 101</li>
+                  <li><strong>Phone Number:</strong> 9876543210</li>
+                  <li><strong>Branch:</strong> Computer Science</li>
+                  <li><strong>Address:</strong> 123, Main Street, City</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h4>Parent Information</h4>
+                <ul class="list-unstyled">
+                  <li><strong>Father's Name:</strong> David Doe</li>
+                  <li><strong>Father's Contact Number:</strong> 9876543210</li>
+                  <li><strong>Mother's Name:</strong> Mary Doe</li>
+                  <li><strong>Mother's Contact Number:</strong> 9876543210</li>
+                </ul>
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-JsA7Zl00gmkwTkov2UBQH5d++craG5LE9J5C5HuQoW8JvGZ5nDLDaemKYwTKnWtE4v4yR9XdFJDPn4BHfS+dwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-dHv5+9l5J

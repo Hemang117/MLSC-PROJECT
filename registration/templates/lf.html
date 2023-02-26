@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lost and Found</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Lost and Found Items</h1>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="my-4">Add a Lost Item</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="lostItemName">Item Name:</label>
+                        <input type="text" class="form-control" id="lostItemName" name="lostItemName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lostItemDesc">Item Description:</label>
+                        <textarea class="form-control" id="lostItemDesc" name="lostItemDesc"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="lostItemLocation">Last Known Location:</label>
+                        <input type="text" class="form-control" id="lostItemLocation" name="lostItemLocation">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="my-4">Add a Found Item</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="foundItemName">Item Name:</label>
+                        <input type="text" class="form-control" id="foundItemName" name="foundItemName">
+                    </div>
+                    <div class="form-group">
+                        <label for="foundItemDesc">Item Description:</label>
+                        <textarea class="form-control" id="foundItemDesc" name="foundItemDesc"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="foundItemLocation">Found Location:</label>
+                        <input type="text" class="form-control" id="foundItemLocation" name="foundItemLocation">
+                    </div>
+                    <div class="form-group">
+                        <label for="foundItemLocation">Collection Location:</label>
+                        <input type="text" class="form-control" id="foundItemLocation" name="foundItemLocation">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br><br><br><br>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
