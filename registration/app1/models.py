@@ -7,8 +7,8 @@ class loginpage(models.Model):
 class profile(models.Model):
     profile_Hostel=models.CharField(max_length=50)
     profile_HostelBlock=models.CharField(max_length=20)
-    profile_RoomNo=models.IntegerField(max_length=10)
-    profile_contact=models.IntegerField(max_length=10)
+    profile_RoomNo=models.IntegerField
+    profile_contact=models.IntegerField
     
 class notice(models.Model):
     notice_Notice=models.CharField(max_length=250)
